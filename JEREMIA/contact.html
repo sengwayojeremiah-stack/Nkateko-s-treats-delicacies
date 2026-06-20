@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Services | Nkateko's Treats & Delicacies</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/Nkateko's logo.jpeg" alt="" width="128px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="order.html" class="btn">Order Now!</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+
+
+  <div class="contact-card">
+    <div class="contact-card-header">
+        <h3>Nkateko's Treats & Delicacies</h3>
+        <p>Top Quality & Deliciousness</p>
+    </div>
+
+ <div class="contact-card-body">
+        <div class="contact-card-item">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+                <span>Email</span>
+                <p>nkateko.pearl@yahoo.com</p>
+            </div>
+        </div>
+        <div class="contact-card-item">
+            <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+                <span>Phone</span>
+                <p>(+27) 81-813-2382</p>
+            </div>
+        </div>
+        <div class="contact-card-item">
+            <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+                <span>Address</span>
+                <p>123 Main Street, Kimberley Central</p>
+            </div>
+        </div>
+    </div>
+
+  
+
+  <div class="contact-card-footer">
+        <p>Follow Us</p>
+        <div class="social-icons">
+            <ul>
+                <li><a href="www.facebook.com/yourpagename" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://wa.me/27818132382" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.tiktok.com/@username" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Visit Our website</h3>
+                <p>Visit to explore our services.</p>
+
+            <div class="footer-col-contact">
+                <h3>Contact Us</h3>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:nkateko.pearl@yahoo.com">nkateko.pearl@yahoo.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <p><a href="tel:+27818132382">( +27) 81-813-2382</a></p>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Address</strong>
+                        <p>123 Main Street, Kimberley Central</p>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+
+             <div class="footer-col-2">
+                <img src="images/Nkateko's logo.jpeg" alt="">
+                <p>Our purpose is to provide quality and fresh service for our costumers.</p>
+            </div>
+
+    
+             <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>Blog Posts</li>
+                </ul>
+            </div>
+
+             <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                <ul>
+                    <a href="www.facebook.com/yourpagename" target="_balnk" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.me/27818132382" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@username" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                </ul>
+                </div>
+               
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2026 - Nkateko's Treats & Delicacies</p>
+    </div>
+</div>
+
+<!-----------------------------------------------Footer Ends Here --------------------------------------------------------->
+
+<!---- JavaScript for toggle menu ---->
+
+ <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px") {
+
+                MenuItems.style.maxHeight = "270px";
+                 MenuItems.style.pointerEvents = "auto";
+            } 
+            
+            else {
+                MenuItems.style.maxHeight = "0px";
+                 MenuItems.style.pointerEvents = "none";
+            }
+        }
+    </script>
+
+ <!------------------ End ---------------------->
+
+
+
+
+   
+
+
+
+
+
+  </body>
+</html>

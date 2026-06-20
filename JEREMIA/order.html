@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Order Now! | Nkateko's Treats & Delicacies</title>
+</head>
+<body>
+
+
+<!---------------------------------------------------------- Order Form -------------------------------------------------------------------------->
+
+<main>
+    <div class="order-section">
+        <h1>Place Your Order</h1>
+
+        <form id="orderForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="product">Select Product</label>
+            <select id="product" name="product" required>
+                <option value="">Choose an item</option>
+                <option>Lemon Poppy Seeds Muffins</option>
+                <option>Blueberry Scones</option>
+                <option>Lemon Raisins Scones</option>
+                <option>20L Bucket Scones</option>
+                <option>Choc-Chip Cookies</option>
+                <option>Plastic Pack Scones</option>
+                <option>Fresh Scones</option>
+            </select>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <label for="date">Preferred Collection/Delivery Date</label>
+            <input type="date" id="date" name="date">
+
+            <label for="instructions">Special Instructions</label>
+            <textarea id="instructions" name="instructions" placeholder="Tell us about your order..."></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</main>
+
+
+<!----------------------------------------------------------- Form Ends Here --------------------------------------------------------------------->
+
+
+<!------------------------------------------------- Footer starts here --------------------------------------------------------------------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Visit Our website</h3>
+                <p>Visit to explore our services.</p>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/Nkateko's logo.jpeg" alt="">
+                <p>Our purpose is to provide quality and fresh service for our costumers.</p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li>Blog Post</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <div class="social-icons">
+                <ul>
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2026 - Nkateko's Treats & Delicacies</p>
+    </div>
+</div>
+
+<!--------------------------------------------------------------- Footer Ends Here --------------------------------------------------------------->
+
+
+
+
+<!------------------------------------------ Confirmation Modal for when placing an order -------------------------------------------------------->
+
+
+<div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999; justify-content:center; align-items:center;">
+    <div id="modalBox" style="background:#fff; border-radius:15px; padding:40px 30px; max-width:420px; width:90%; text-align:center;">
+        <div style="font-size:50px; margin-bottom:10px;">🎉</div>
+        <h2 style="color:#5C4033; margin-bottom:10px;">Order Received!</h2>
+        <p id="modalMessage" style="color:#5C4033; margin-bottom:25px; line-height:1.6;"></p>
+        <button id="whatsappBtn" style="background:#25D366; color:white; border:none; padding:12px 30px; border-radius:50px; font-size:1rem; cursor:pointer; margin-bottom:10px; width:100%;">
+            Send via WhatsApp
+        </button>
+        <button id="closeModal" style="background:transparent; color:#5C4033; border:2px solid #5C4033; padding:10px 30px; border-radius:50px; font-size:0.9rem; cursor:pointer; width:100%;">
+            Close
+        </button>
+    </div>
+</div>
+
+<!---------------------------------------------------- Confirmation Ends Here ------------------------------------------------------------------->
+
+
+
+
+
+
+<!---------------------------------------------------- JavaScript for toggle menu --------------------------------------------------------------->
+
+ <script>
+        var MenuItems = document.getElementById("MenuItems");
+        if (MenuItems) {
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "270px";
+                     MenuItems.style.pointerEvents = "auto";
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                     MenuItems.style.pointerEvents = "none";
+                }
+            }
+        }
+    </script>
+
+
+<script src="script.js"></script>
+
+
+<!----------------------------------------------------------------------- End here --------------------------------------------------------------->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
